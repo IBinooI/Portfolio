@@ -35,10 +35,20 @@ header nav ul li a {
   color: white;
   font-weight: bold;
 }
-h2 {
-  margin-bottom: 10px;
-  color: white;
-  text-decoration: underline;
+
+#sub-title {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  width: 100%;
+}
+
+#sub-title2 {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  width: 100%;
 }
 
 #p1 {
@@ -46,6 +56,12 @@ h2 {
   margin-bottom: 10px;
   line-height: 1.6;
 }
+#p2 {
+  margin-top: 10px;
+  padding-top: 2px;
+  text-align: center;
+}
+
 main {
   flex: 1;
 }
