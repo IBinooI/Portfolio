@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
