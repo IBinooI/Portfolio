@@ -14,17 +14,20 @@ body {
 body {
   font-family: Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-image: url('imgs/Domo_BackGround.jpg');
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 header {
-  background: rgb(90, 0, 90);
+  background: black;
   color: white;
   padding: 1rem 0;
   text-align: center;
 }
 
-header nav ul {
+nav ul {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -34,52 +37,44 @@ header nav ul {
 header nav ul li a {
   color: white;
   font-weight: bold;
+  padding: 0.5rem 1rem; 
+  transition: background-color 0.3s ease;
 }
 
-#sub-title {
+header nav ul li a:hover {
+  background-color: brown; 
+}
+
+
+main {
+  flex: 1;
+}
+
+#sub-title{
   display: inline-block;
   border-bottom: 3px solid white;
   padding-bottom: 2px;
   padding-top: 2px;
   width: 100%;
-}
-
-#sub-title2 {
-  display: inline-block;
-  border-bottom: 3px solid white;
-  padding-bottom: 2px;
-  width: 100%;
+  text-align: center;
 }
 
 #p1 {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.6;
-}
-#p2 {
-  margin-top: 10px;
-  padding-top: 2px;
   text-align: center;
+  color: black;
 }
 
-main {
-  flex: 1;
+.highlight {
+  color: brown; 
+  text-shadow: 1px 0.5px 4px white; 
 }
 
 footer {
-  background: rgb(90, 0, 90);
+  background: black;
   color: white;
   text-align: center;
   padding: 1rem 0;
-}
-
-.about-me {
-  display: flex;
-  position: relative;
-  gap: 20px;
-}
-
-.about-me p {
-  position: relative;
-  line-height: 1;
 }
