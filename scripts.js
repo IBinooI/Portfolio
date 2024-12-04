@@ -1,5 +1,9 @@
-window.onload = () => {
-    // Add the 'loaded' class after the page has fully loaded
-    document.querySelector('.about-me').classList.add('loaded');
-  };
+window.addEventListener('load', function () {
+    const aboutMe = document.querySelector('.about-me');
+    const videoSection = document.querySelector('.video-section');
+  
+    // Add 'loaded' class to both sections to trigger the fade-in effect
+    aboutMe.classList.add('loaded');
+    videoSection.classList.add('loaded');
+  });
   
