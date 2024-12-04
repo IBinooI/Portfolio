@@ -1,7 +1,9 @@
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 html,
@@ -13,15 +15,15 @@ body {
 
 body {
   font-family: Arial, sans-serif;
-  color: white;
-  background-image: url('imgs/Domo_BackGround.jpg');
-  background-size: cover; /* Ensures the image covers the whole screen */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url("imgs/Domo_BackGround.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* Header styles */
 header {
-  background: black;
+  background: rgb(162, 111, 69);
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -30,50 +32,55 @@ header {
 nav ul {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 header nav ul li a {
   color: white;
   font-weight: bold;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  background-color: brown; 
+  background-color: rgb(0, 0, 0);
 }
 
-
+/* Main content styles */
 main {
   flex: 1;
 }
 
-#sub-title{
+/* Subtitle styles with underline */
+.sub-title {
   display: inline-block;
   border-bottom: 3px solid white;
   padding-bottom: 2px;
   padding-top: 2px;
   width: 100%;
+  color: white;
   text-align: center;
+  font-size: 2rem;
 }
 
-#p1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 1.6;
-  text-align: center;
+.about-This p {
   color: black;
+  text-align: center;
+  background-color:rgb(162, 111, 69 , 0.8);
+  padding: 20px; /* Space inside the box */
+  border-radius: 10px; 
+  max-width: 600px; 
+  margin: 20px auto; /* Center the box horizontally */
+  position: absolute; /* Position it relative to the viewport */
+  top: 50%; /* Position from the top of the page */
+  left: 50%; /* Position from the left of the page */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center it */
 }
 
-.highlight {
-  color: brown; 
-  text-shadow: 1px 0.5px 4px white; 
-}
-
+/* Footer styles */
 footer {
-  background: black;
+  background:rgb(162, 111, 69);
   color: white;
   text-align: center;
   padding: 1rem 0;

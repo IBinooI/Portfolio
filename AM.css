@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: black;
+  background: rgb(162, 111, 69);
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -42,7 +42,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: brown;
+  background-color: rgb(0, 0, 0);
 }
 
 main {
@@ -57,7 +57,14 @@ main {
   width: 100%;
   color: white;
   text-align: center;
+  font-size: 2rem;
 }
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: rgb(162, 111, 69);
+    text-decoration-thickness: 4px;
+  }
 
 /* about-me Section */
 .about-me {
@@ -74,18 +81,13 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+
 .about-me p {
   line-height: 1.6;
   text-align: center;
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.underline {
-  text-decoration: underline;
-  text-decoration-color: rgb(162, 111, 69);
-  text-decoration-thickness: 4px;
 }
 
 .about-me img {
@@ -128,9 +130,9 @@ main {
 }
 
 .video-section p {
-  max-width: 400px;
+  max-width: 600px;
   color: black;
-  text-align: left; /* Ensure text aligns left */
+  text-align: center; /* Ensure text aligns left */
   margin-right: 20px; /* Space between text and video */
 }
 
@@ -153,7 +155,7 @@ main {
 
 /* Footer styles */
 footer {
-  background: black;
+  background: rgb(162, 111, 69);
   color: white;
   text-align: center;
   padding: 1rem 0;
