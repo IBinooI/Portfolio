@@ -54,8 +54,8 @@ main {
 
 .highlight {
  font-weight: bold; /* Make it stand out */
+ color: rgb(0, 0, 0);
 }
-
 
 /* Subtitle styles with underline */
 .sub-title {
@@ -67,6 +67,8 @@ main {
   color: white;
   text-align: center;
   font-size: 2rem;
+  background-color: rgb(162, 111, 69);
+
 }
 
 /* About section */
@@ -93,7 +95,6 @@ main {
   padding: 20px; /* Space inside the box */
   border-radius: 10px; /* Rounded corners */
   max-width: 600px; /* Limit box width */
-  margin: 0 auto; /* Center horizontally */
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 
 }

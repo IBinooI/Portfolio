@@ -1,9 +1,10 @@
-window.addEventListener('load', function () {
-    const aboutMe = document.querySelector('.about-me');
-    const videoSection = document.querySelector('.video-section');
-  
-    // Add 'loaded' class to both sections to trigger the fade-in effect
-    aboutMe.classList.add('loaded');
-    videoSection.classList.add('loaded');
-  });
-  
+window.addEventListener("load", () => {
+    const aboutMeSection = document.querySelector(".about-me");
+    const videoSection = document.querySelector(".video-section");
+    const futureGoalSection = document.querySelector(".future-goal-content");
+
+    console.log(futureGoalSection); // Debug to check if element is selected
+    aboutMeSection.classList.add("loaded");
+    videoSection.classList.add("loaded");
+    futureGoalSection.classList.add("loaded");
+});
