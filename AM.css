@@ -1,218 +1,206 @@
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  html,
-  body {
-    height: 130%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-image: url("imgs/Domo_BackGround.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  header {
-    background: rgb(162, 111, 69);
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 2rem;
-  }
-  
-  header nav ul li a {
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  header nav ul li a:hover {
-    background-color: black;
-  }
-  
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  #sub-title {
-    display: inline-block;
-    border-bottom: 3px solid white;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    background-color: rgb(162, 111, 69);
-  }
-  
-  .underline {
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 0, 0);
-    text-decoration-thickness: 4px;
-  }
-  
-  /* about-me Section */
-  .about-me {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 20px;
-    opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start with slight downward offset */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition effect */  
-  }
-  
-  .about-me p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    text-align: center;
-    color: rgb(255, 255, 255);
-  }
-  
-  .about-me img {
-    border-radius: 10px;
-    padding: 30px;
-    position: relative; /* Make the element positionable */
-    left: 80px;
-  }
-  
-  .about-me aside {
-    max-width: 600px;
-    background: rgb(162, 111, 69);
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-    position: relative; /* Make the element positionable */
-    top: 50px;  /* Move the paragraph down */
-    left: 80px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  }
-  
-  .about-me.loaded {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Slide up */
-  }
+html,
+body {
+  height: 130%;
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Video Section */
-  .video-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-right: 50px; 
-    opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start with slight downward offset */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition effect */  
-  }
-  
-  .video-section p {
-    font-size: 1.15rem;
-    line-height: 1.25;
-    max-width: 600px;
-    color: rgb(254, 254, 254);
-    text-align: center;
-    margin-right: 20px;
-  }
-  
-  .video-section video {
-    border-radius: 10px;
-    padding: 30px;
-    position: relative; /* Make the element positionable */
-    top: -50px;  /* Move the paragraph down */
-  }
-  
-  .video-section aside {
-    max-width: 400px; /* Restrict the width */
-    background: rgb(162, 111, 69); /* Matches design */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-    position: relative; /* Make the element positionable */
-    top: -50px;  /* Move the paragraph down */
-  }
-  
-  .video-section.loaded {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Slide up */
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("imgs/Domo_BackGround.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  /* future-goal-content */
-  .future-goal-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 20px;
-    opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start with slight downward offset */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition effect */
-  }
-  
-  .future-goal-content p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    text-align: center;
-    color: rgb(255, 255, 255);
-  }
-  
-  .future-goal-content img {
-    border-radius: 10px;
-    padding: 30px;
-    position: relative; /* Make the element positionable */
-    top: -100px;  /* Move the paragraph down */
-    left: 80px;
+header {
+  background: rgb(162, 111, 69);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
 
-  }
-  
-  .future-goal-content aside {
-    max-width: 600px;
-    background: rgb(162, 111, 69);
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-    position: relative; /* Make the element positionable */
-    top: -50px;  /* Move the paragraph down */
-    left: 80px;
-  }
-  
-  .future-goal-content.loaded {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Slide up */
-  }
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}
 
+header nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
 
-  /* Hover effect for images */
+header nav ul li a:hover {
+  background-color: black;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sub-title {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(162, 111, 69);
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-thickness: 4px;
+}
+
+/* about-me Section */
+.about-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  opacity: 0; /* Start hidden */
+  transform: translateY(50px); /* Start with slight downward offset */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Transition effect */
+}
+
+.about-me p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.about-me img {
+  border-radius: 10px;
+  padding: 30px;
+  position: relative; /* Make the element positionable */
+  left: 80px;
+}
+
+.about-me aside {
+  max-width: 600px;
+  background: rgb(162, 111, 69);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  position: relative; 
+  top: 50px; 
+  left: 80px;
+}
+
+/* Transtion in */
+.about-me.loaded,
+.video-section.loaded,
+.future-goal-content.loaded {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide up */
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 50px;
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.video-section p {
+  font-size: 1.15rem;
+  line-height: 1.25;
+  max-width: 600px;
+  color: rgb(254, 254, 254);
+  text-align: center;
+  margin-right: 20px;
+}
+
+.video-section video {
+  border-radius: 10px;
+  padding: 30px;
+  position: relative; 
+  top: -50px; 
+}
+
+.video-section aside {
+  max-width: 400px; /* Restrict the width */
+  background: rgb(162, 111, 69); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  position: relative; 
+  top: -50px; 
+}
+
+/* future-goal-content */
+.future-goal-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 0.8s ease, transform 0.8s ease; 
+}
+
+.future-goal-content p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.future-goal-content img {
+  border-radius: 10px;
+  padding: 30px;
+  position: relative; 
+  top: -100px; 
+  left: 80px;
+}
+
+.future-goal-content aside {
+  max-width: 600px;
+  background: rgb(162, 111, 69);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  position: relative; 
+  top: -50px; 
+  left: 80px;
+}
+
+/* Hover effect for images */
 .about-me img:hover,
 .video-section video:hover,
 .future-goal-content img:hover {
-    transform: scale(1.5); /* Slight zoom in */
-    transition: transform 0.3s ease; /* Smooth transition */
+  transform: scale(1.5); 
+  transition: transform 0.3s ease; 
 }
 
-  
-  /* Footer styles */
-  footer {
-    background: rgb(162, 111, 69);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
+/* Footer styles */
+footer {
+  background: rgb(162, 111, 69);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}

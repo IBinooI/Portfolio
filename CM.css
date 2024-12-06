@@ -1,7 +1,9 @@
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 html,
@@ -13,6 +15,128 @@ body {
 
 body {
   font-family: Arial, sans-serif;
+  background-image: url("imgs/Domo_BackGround.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header styles */
+header {
+  background: rgb(162, 111, 69);
   color: white;
-  background-color: black;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Main content styles */
+main {
+  flex: 1;
+}
+
+/* Subtitle styles with underline */
+.sub-title {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(162, 111, 69);
+
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between icons */
+  margin-top: 20px;
+}
+
+.social-media a img {
+  border-radius: 50%; /* Optional: makes icons round */
+  transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+.social-media a img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Contact form styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(162, 111, 69, 0.8); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allows resizing the textarea vertically */
+}
+
+form button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgb(162, 111, 69);
+}
+
+
+
+/* Footer styles */
+footer {
+  background: rgb(162, 111, 69);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
