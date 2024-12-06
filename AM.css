@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: rgb(162, 111, 69);
+  background:  rgb(162, 111, 69);
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -42,7 +42,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
 
 main {
@@ -88,6 +88,7 @@ main {
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Lobster'; 
 }
 
 .about-me img {
@@ -98,16 +99,12 @@ main {
 
 .about-me aside {
   max-width: 600px;
-  background: linear-gradient(
-    to top left,
-    rgba(255, 255, 255, 0.8),
-    rgba(220, 220, 255, 0.8)
-  );
+  background: rgb(162, 111, 69);
   border-radius: 10px; /* Revert to a simple rounded box */
   padding: 30px;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
   position: relative;
-  top: 100px;
+  top: 50px;
   left: 50px;
   z-index: 10;
 }
@@ -134,6 +131,7 @@ main {
   color: black;
   text-align: center; /* Ensure text aligns left */
   margin-right: 20px; /* Space between text and video */
+  font-family: 'Lobster'; 
 }
 
 .video-section video {
@@ -142,11 +140,7 @@ main {
 
 .video-section aside {
   max-width: 400px; /* Restrict the width */
-  background: linear-gradient(
-    to top left,
-    rgba(255, 255, 255, 0.8),
-    rgba(220, 220, 255, 0.8)
-  );
+  background: rgb(162, 111, 69);
   border-radius: 10px;
   padding: 20px;
   margin-right: 20px;
