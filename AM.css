@@ -91,6 +91,8 @@
   .about-me img {
     border-radius: 10px;
     padding: 30px;
+    position: relative; /* Make the element positionable */
+    left: 80px;
   }
   
   .about-me aside {
@@ -101,6 +103,8 @@
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
     position: relative; /* Make the element positionable */
     top: 50px;  /* Move the paragraph down */
+    left: 80px;
+
   }
   
   .about-me.loaded {
@@ -174,6 +178,8 @@
     padding: 30px;
     position: relative; /* Make the element positionable */
     top: -100px;  /* Move the paragraph down */
+    left: 80px;
+
   }
   
   .future-goal-content aside {
@@ -184,12 +190,23 @@
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
     position: relative; /* Make the element positionable */
     top: -50px;  /* Move the paragraph down */
+    left: 80px;
   }
   
   .future-goal-content.loaded {
     opacity: 1; /* Fade in */
     transform: translateY(0); /* Slide up */
   }
+
+
+  /* Hover effect for images */
+.about-me img:hover,
+.video-section video:hover,
+.future-goal-content img:hover {
+    transform: scale(1.5); /* Slight zoom in */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
   
   /* Footer styles */
   footer {
