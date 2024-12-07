@@ -1,0 +1,183 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+  
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("imgs/Domo_BackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+/* Header styles */
+header {
+    background: rgb(162, 111, 69);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+  
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+  
+header nav ul li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+  
+/* Main content styles */
+main {
+    flex: 1;
+}
+  
+/* Subtitle styles with underline */
+.sub-title {
+    display: inline-block;
+    border-bottom: 3px solid white;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(162, 111, 69);
+}
+  
+/* Card Slider Section */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    max-width: 1600px; /* Increased max width of the slider container */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Hide overflowed content */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+  
+/* The Slider itself (Horizontal movement) */
+.card-slider {
+    display: flex;
+    flex-direction: row; /* Stack the cards horizontally */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    width: max-content; /* Adjust width to fit content */
+}
+  
+/* Style for each card */
+.card {
+    margin: 16px;
+    background-color: #f4f4f4;
+    padding: 30px; /* Increased padding for bigger cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover; /* Ensures the background image covers the entire card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    height: 800px; /* Adjust height for vertical cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 100%; /* Ensure only one card takes up the full width of the container */
+}
+
+/* Set unique background images for each card */
+.card:nth-child(1) {
+    background-image: url('imgs/frank-ocean-background.jpg');
+}
+
+.card:nth-child(2) {
+    background-image: url('path/to/your/image2.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: url('path/to/your/image3.jpg');
+}
+
+.card:nth-child(4) {
+    background-image: url('path/to/your/image4.jpg');
+}
+
+.card:nth-child(5) {
+    background-image: url('path/to/your/image5.jpg');
+}
+
+/* Card heading */
+.card h3 {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 1rem;
+}
+  
+/* Card paragraph */
+.card p {
+    font-size: 1.2rem; /* Slightly bigger font size */
+    margin-bottom: 1rem;
+}
+  
+/* Card links */
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+  
+.card a:hover {
+    text-decoration: underline;
+}
+  
+/* Slider buttons */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
+}
+  
+button.prev {
+    left: 10px;
+}
+  
+button.next {
+    right: 10px;
+}
+  
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Footer styles */
+footer {
+    background: rgb(162, 111, 69);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
