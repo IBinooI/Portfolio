@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
       return;
     }
 
-    alert("Form has been submitted!");
+    alert("Your Message Has been submitted!");
 
     document.querySelector("#contactForm").reset();
   });
