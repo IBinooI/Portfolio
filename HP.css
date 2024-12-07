@@ -1,4 +1,3 @@
-/* Reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Header styles */
 header {
   background: rgb(162, 111, 69);
   color: white;
@@ -47,17 +45,15 @@ header nav ul li a:hover {
   background-color: rgb(0, 0, 0);
 }
 
-/* Main content styles */
 main {
   flex: 1;
 }
 
 .highlight {
- font-weight: bold; /* Make it stand out */
- color: rgb(0, 0, 0);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
-/* Subtitle styles with underline */
 .sub-title {
   display: inline-block;
   border-bottom: 3px solid white;
@@ -68,38 +64,34 @@ main {
   text-align: center;
   font-size: 2rem;
   background-color: rgb(162, 111, 69);
-
 }
 
-/* About section */
 .about-This {
-  position: absolute; /* Position it relative to the viewport */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust position to truly center it */
-  text-align: center; /* Center content */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .about-This img {
-  max-width: 300px; /* Limit the image width */
-  margin-bottom: 20px; /* Space between image and text */
-  border-radius: 15px; /* Rounded corners for the image */
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 .about-This p {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: 'Lobster'; 
+  font-family: "Lobster";
   font-size: 1.5rem;
-  background-color: rgba(162, 111, 69, 0.8); /* Semi-transparent background */
-  padding: 20px; /* Space inside the box */
-  border-radius: 10px; /* Rounded corners */
-  max-width: 600px; /* Limit box width */
+  background-color: rgba(162, 111, 69, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-
 }
 
-/* Footer styles */
 footer {
   background: rgb(162, 111, 69);
   color: white;

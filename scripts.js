@@ -46,37 +46,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
   let currentIndex = 0;
 
-  // Move to the next card (to the right)
   const moveToNext = () => {
     if (currentIndex < cards.length - 1) {
       currentIndex++;
     } else {
-      currentIndex = 0; // Loop back to the first card
+      currentIndex = 0;
     }
     updateSlider();
   };
 
-  // Move to the previous card (to the left)
   const moveToPrevious = () => {
     if (currentIndex > 0) {
       currentIndex--;
     } else {
-      currentIndex = cards.length - 1; // Loop back to the last card
+      currentIndex = cards.length - 1;
     }
     updateSlider();
   };
 
-  // Update the slider position (for horizontal movement)
   const updateSlider = () => {
-    const cardWidth = cards[0].offsetWidth + 32; // Adjusted for any additional margin/padding
+    const cardWidth = cards[0].offsetWidth + 32;
     slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
   };
 
-  // Add event listeners to the navigation buttons
   const prevButton = document.querySelector(".prev");
   prevButton.addEventListener("click", moveToPrevious);
 
   const nextButton = document.querySelector(".next");
   nextButton.addEventListener("click", moveToNext);
 });
-

@@ -1,4 +1,3 @@
-/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ body {
     background-repeat: no-repeat;
 }
   
-/* Header styles */
 header {
     background: rgb(162, 111, 69);
     color: white;
@@ -47,12 +45,10 @@ header nav ul li a:hover {
     background-color: rgb(0, 0, 0);
 }
   
-/* Main content styles */
 main {
     flex: 1;
 }
   
-/* Subtitle styles with underline */
 .sub-title {
     display: inline-block;
     border-bottom: 3px solid white;
@@ -65,77 +61,70 @@ main {
     background-color: rgb(162, 111, 69);
 }
   
-/* Card Slider Section */
 .slider-container {
     position: relative;
     width: 100%;
     height: 90%;
-    max-width: 1600px; /* Increased max width of the slider container */
-    margin: 0 auto; /* Center the container horizontally */
-    overflow: hidden; /* Hide overflowed content */
+    max-width: 1600px; 
+    margin: 0 auto; 
+    overflow: hidden; 
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; 
 }
   
-/* The Slider itself (Horizontal movement) */
 .card-slider {
     display: flex;
-    flex-direction: row; /* Stack the cards horizontally */
-    transition: transform 0.5s ease; /* Smooth transition for sliding */
-    width: max-content; /* Adjust width to fit content */
+    flex-direction: row; 
+    transition: transform 0.5s ease; 
+    width: max-content; 
 }
   
-/* Style for each card */
 .card {
     margin: 16px;
     background-color: #f4f4f4;
-    padding: 30px; /* Increased padding for bigger cards */
+    padding: 30px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-size: cover; /* Ensures the background image covers the entire card */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating the background image */
-    height: 800px; /* Adjust height for vertical cards */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 500px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 100%; /* Ensure only one card takes up the full width of the container */
+    flex: 0 0 100%; 
 }
 
-/* Set unique background images for each card */
 .card:nth-child(1) {
-    background-image: url('imgs/frank-ocean-background.jpg');
+    background-image: url('imgs/Equinox_Background.jpg');
 }
 
 .card:nth-child(2) {
-    background-image: url('path/to/your/image2.jpg');
+    background-image: url('imgs/weatherApp-Background.jpg');
 }
 
 .card:nth-child(3) {
-    background-image: url('path/to/your/image3.jpg');
+    background-image: url('imgs/DraftPage-Background.jpg');
 }
 
 .card:nth-child(4) {
-    background-image: url('path/to/your/image4.jpg');
+    background-image: url('imgs/Platformer-Background.PNG');
 }
 
 .card:nth-child(5) {
-    background-image: url('path/to/your/image5.jpg');
+    background-image: url('imgs/Descent-BackGround.PNG');
 }
 
-/* Card heading */
 .card h3 {
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem; 
     margin-bottom: 1rem;
 }
   
-/* Card paragraph */
 .card p {
-    font-size: 1.2rem; /* Slightly bigger font size */
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
   
-/* Card links */
 .card a {
     color: #007bff;
     text-decoration: none;
@@ -146,7 +135,6 @@ main {
     text-decoration: underline;
 }
   
-/* Slider buttons */
 button.prev,
 button.next {
     position: absolute;
@@ -174,7 +162,6 @@ button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
   
-/* Footer styles */
 footer {
     background: rgb(162, 111, 69);
     color: white;

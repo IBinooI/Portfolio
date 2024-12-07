@@ -1,4 +1,3 @@
-/* Reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -70,15 +69,14 @@ main {
   text-decoration-thickness: 4px;
 }
 
-/* about-me Section */
 .about-me {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   margin-top: 20px;
-  opacity: 0; /* Start hidden */
-  transform: translateY(50px); /* Start with slight downward offset */
-  transition: opacity 0.8s ease, transform 0.8s ease; /* Transition effect */
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 0.8s ease, transform 0.8s ease; 
 }
 
 .about-me p {
@@ -91,7 +89,7 @@ main {
 .about-me img {
   border-radius: 10px;
   padding: 30px;
-  position: relative; /* Make the element positionable */
+  position: relative; 
   left: 80px;
 }
 
@@ -106,15 +104,13 @@ main {
   left: 80px;
 }
 
-/* Transtion in */
 .about-me.loaded,
 .video-section.loaded,
 .future-goal-content.loaded {
-  opacity: 1; /* Fade in */
-  transform: translateY(0); /* Slide up */
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
-/* Video Section */
 .video-section {
   display: flex;
   align-items: center;
@@ -143,7 +139,7 @@ main {
 }
 
 .video-section aside {
-  max-width: 400px; /* Restrict the width */
+  max-width: 400px;
   background: rgb(162, 111, 69); 
   border-radius: 10px;
   padding: 20px;
@@ -152,7 +148,6 @@ main {
   top: -50px; 
 }
 
-/* future-goal-content */
 .future-goal-content {
   display: flex;
   align-items: flex-start;
@@ -189,7 +184,6 @@ main {
   left: 80px;
 }
 
-/* Hover effect for images */
 .about-me img:hover,
 .video-section video:hover,
 .future-goal-content img:hover {
@@ -197,7 +191,6 @@ main {
   transition: transform 0.3s ease; 
 }
 
-/* Footer styles */
 footer {
   background: rgb(162, 111, 69);
   color: white;
